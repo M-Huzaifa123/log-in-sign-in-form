@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Lilita+One&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="box">
+        <h1 id="head1">SIGN IN</h1>
+        <form>
+            <div class="can">
+            <label id="lab1" for="username">Username
+                <img class="img1" src="./images/user.png">
+                <input type="text" name="username" id="username" placeholder="Type your username" pattern="[A-Za-z0-9]+"
+                title="letters and numbers only, no punctuation or special characters" required>
+            </label>
+            
+            <label id="lab2" for="password">Password
+                <img class="img2" src="./images/padlock.png">
+                <input type="password" name="username" id="password" placeholder="Type a password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            </label>
+        </div>
+      <div id="link">
+        <a href="./reset.html" class="a1">Forget password</a>
+      </div>  
+
+            <button type="submit" id="sub">Login</button>
+            
+        </form>
+
+        <p id="para3">or Sign in with</p>
+        <div id="icons">
+            <a href="https://www.facebook.com/reg/" target="_blank"><img class="img3" src="./images/communication.png"></a>
+            <a href="https://x.com/i/flow/signup" target="_blank"><img class="img3" src="./images/twitter.png"></a>
+            <a href="https://accounts.google.com/lifecycle/steps/signup/name?continue=https://myaccount.google.com/security&ddm=0&dsh=S-13417806:1723748846635298&ec=GAlAwAE&flowEntry=SignUp&flowName=GlifWebSignIn&hl=en_GB&service=accountsettings&TL=AKeb6mwgxGZJfGJgGCto-We7FOIqYZf5Qhq6JLs3Ut2i09le0w0dQyL8IJIOPAnU" target="_blank"><img class="img3" src="./images/google-plus.png"></a>
+        </div>
+
+        <p id="para"><a href="./log in.html" class="a2">LOG IN</a></p>
+
+    </div>
+</body>
+</html>

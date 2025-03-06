@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reset</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Lilita+One&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #B1A2F3;
+            height: 100vh;
+        }
+
+        .reset {
+            margin-top: 80px;
+            margin-left: 30%;
+            width: 40%;
+            height: 60%;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 5px;
+            border-right: 2px solid #E979DE;
+            border-top: 2px solid #55CEF7  ;
+            border-left: 2px solid #E77FE6 ;
+            border-bottom: 2px solid #938FF6 ;
+
+            box-shadow: 
+            4px 0 25px   #E979DE, 
+            -4px 0 25px  #E77FE6,
+            0 -4px 25px  #55CEF7, 
+            0 4px 25px  #938FF6;  
+        }
+
+        .reset:hover{
+            box-shadow: 
+    4px 0 35px 3px #E979DE,  
+   -4px 0 35px 3px #E77FE6,
+    0 -4px 35px 3px #55CEF7,
+    0 4px 35px 3px #938FF6; 
+            
+        }
+
+
+
+        .reset h2 {
+            font-family: "Poppins", sans-serif;
+            font-size: 40px;
+            margin-bottom: 50px;
+            color: rgba(0,0,0, 0.5);
+            text-shadow: 
+            -2px -2px 0 black,  
+            2px -2px 0 black,
+            -2px 2px 0black,
+            2px 2px 0 black; 
+        }
+        .reset input[type="email"] {
+            border-radius: 2px;
+            background-color: rgba(255,255,255, 0);
+            border-bottom: 1px solid black;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            outline: none;
+            width: 90%;
+            padding-top: 10px;
+            margin-top: 15px;
+            margin-bottom: 50px;
+            margin-left: 20px;
+            transition: 1s;
+        }
+
+
+        .reset input:hover{
+            border-bottom: 2px solid rgb(225, 6, 210);
+        }
+
+
+        .reset input[type="email"]::placeholder{
+            color:black;
+        }
+
+        .reset input:focus {
+            border-bottom: 2px solid black;
+        }
+
+        .reset button {
+            width: 30%;
+            font-size:larger;
+             border-radius: 15px;
+             background-color: rgba(255,255,255, 0.4);
+              box-shadow: 0px 0px 8px 4px inset rgb(225, 6, 210);
+             border: 1px solid black;
+            margin-left: 170px;
+        }
+        .reset button:hover {
+            box-shadow: 0px 0px 8px 4px rgb(225, 6, 210);
+        }
+        label{
+            font-family: "Poppins", sans-serif;
+            font-size: 18px;
+        }
+
+        #img1{
+            position: absolute;
+            margin-left: -135px; 
+            margin-top: 50px; 
+            width: 20px; 
+            height: 20px;
+        }
+
+    
+
+    </style>
+</head>
+<body>
+    
+
+</body>
+<div class="reset">
+    <h2>Forgot Password</h2>
+    <form action="/send-reset-link" method="POST">
+        <label for="email">Email address:
+            <img id="img1" src="./images/mail.png">
+        <input type="email" id="email" name="email" placeholder="-------------@gmail.com"   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+        title="Please enter a valid email address" required></label>
+        <button type="submit">Forgot Password</button>
+    </form>
+</div>
+
+</html>
